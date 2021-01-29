@@ -50,9 +50,10 @@ setup(
     data_files=[("", ["LICENSE.md"])],
     install_requires=["sqlalchemy", 'aiocontextvars;python_version<"3.7"'],
     extras_require={
-        "postgresql": ["asyncpg", "psycopg2-binary"],
-        "mysql": ["aiomysql", "pymysql"],
-        "sqlite": ["aiosqlite"]
+        "postgresql": ["asyncpg"],
+        "mysql": ["aiomysql"],
+        "sqlite": ["aiosqlite"],
+        "postgresql+aiopg": ["aiopg"]
     },
     classifiers=[
         "Development Status :: 3 - Alpha",
